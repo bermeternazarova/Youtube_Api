@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.youtube_api.base.BaseActivity
 import com.example.youtube_api.databinding.ActivityContentBinding
 import com.example.youtube_api.extensions.showToast
+import com.example.youtube_api.ui.playlist.PlaylistActivity.Companion.KEY
 import com.example.youtube_api.ui.playlist.PlaylistViewModel
 
 class ContentActivity : BaseActivity<PlaylistViewModel, ActivityContentBinding>() {
@@ -18,7 +19,7 @@ class ContentActivity : BaseActivity<PlaylistViewModel, ActivityContentBinding>(
     }
 
     override fun initView() {
-        showToast("${intent.getStringExtra("ooo")}")
+        showToast("${intent.getStringExtra(KEY)}")
     }
 
     override fun initListener() {

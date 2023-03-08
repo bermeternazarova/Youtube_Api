@@ -48,7 +48,7 @@ class PlaylistActivity : BaseActivity<PlaylistViewModel, ActivityPlaylistBinding
 
     private fun itemClick(items: Items) {
         val intent = Intent(this, ContentActivity::class.java).apply {
-            putExtra("ooo", items.id)
+            putExtra(KEY, items.id)
         }
         registerForActivity.launch(intent)
     }
@@ -57,5 +57,8 @@ class PlaylistActivity : BaseActivity<PlaylistViewModel, ActivityPlaylistBinding
         binding.includeInternetCheck.btnTryAgain.setOnClickListener {
             showToast(getString(R.string.no_connection))
         }
+    }
+    companion object{
+        const val KEY="ooo"
     }
 }
