@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.playlist.content.ContentActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/device196p"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_include">
+
+        <TextView
+            android:id="@+id/tv_content_title"
+            style="@style/content_title"
+            android:layout_width="@dimen/device328p"
+            android:layout_height="@dimen/device60p"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/device24p" />
+
+        <TextView
+            android:id="@+id/tv_content_info"
+            style="@style/content_info"
+            android:layout_width="@dimen/device328p"
+            android:layout_height="@dimen/device80p"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/device8p" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/content_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/device16p"
+        android:layout_marginVertical="@dimen/device16p"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/device16p"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+    <ImageView
+        android:layout_width="@dimen/device56p"
+        android:layout_height="@dimen/device56p"
+        android:layout_marginTop="@dimen/device225p"
+        android:layout_marginEnd="@dimen/device30p"
+        android:background="@drawable/circle"
+        android:src="@drawable/play_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

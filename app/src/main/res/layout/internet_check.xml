@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView_check"
+        android:layout_width="@dimen/device228p"
+        android:layout_height="@dimen/device228p"
+        android:layout_marginTop="@dimen/device132p"
+        android:background="@drawable/no_internet"
+        android:contentDescription="@string/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/check_tv_style"
+        android:layout_marginTop="@dimen/device22p"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView_check" />
+
+    <TextView
+        android:id="@+id/btn_try_again"
+        android:layout_width="@dimen/device328p"
+        style="@style/check_btn_style"
+        android:layout_height="@dimen/device40p"
+        android:layout_marginTop="@dimen/device120p"
+        android:background="@drawable/btn_try_again"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_check" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

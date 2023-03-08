@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scale16p">16sp</dimen>
+    <dimen name="device132p">132dp</dimen>
+    <dimen name="device22p">22dp</dimen>
+    <dimen name="device120p">120dp</dimen>
+    <dimen name="device40p">40dp</dimen>
+    <dimen name="device328p">328dp</dimen>
+    <dimen name="device228p">228dp</dimen>
+    <dimen name="device200p">200dp</dimen>
+    <dimen name="device8p">8dp</dimen>
+    <dimen name="device25p">25dp</dimen>
+    <dimen name="device16p">16dp</dimen>
+    <dimen name="device98p">98dp</dimen>
+    <dimen name="device4p">4dp</dimen>
+    <dimen name="scale12p">12sp</dimen>
+    <dimen name="scale18p">18sp</dimen>
+    <dimen name="scale20p">20sp</dimen>
+    <dimen name="device56p">56dp</dimen>
+    <dimen name="device2p">2dp</dimen>
+    <dimen name="device12p">12dp</dimen>
+    <dimen name="device140p">140dp</dimen>
+    <dimen name="device80p">80dp</dimen>
+    <dimen name="device99p">99dp</dimen>
+    <dimen name="device196p">196dp</dimen>
+    <dimen name="device60p">60dp</dimen>
+    <dimen name="device24p">24dp</dimen>
+    <dimen name="scale24p">24sp</dimen>
+    <dimen name="scale15p">15sp</dimen>
+    <dimen name="device30p">30dp</dimen>
+    <dimen name="device225p">225dp</dimen>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="circle">
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="title_style">
+        <item name="android:fontFamily">@font/fjallaone_reg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+    <style name="description_style">
+        <item name="fontFamily">@font/notosans_regular</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+    <style name="tv_playlist_style">
+        <item name="fontFamily">@font/notosans_regular</item>
+        <item name="android:text">@string/playlist</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tv_back_style">
+      <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/back</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="playlist_toolbar_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/_Playlist</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="check_tv_style">
+        <item name="android:text">@string/no_internet_connection</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="fontFamily">@font/fjallaone_reg</item>
+    </style>
+
+    <style name="check_btn_style">
+        <item name="android:text">@string/try_again</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/notosans_regular</item>
+    </style>
+    <style name="content_title">
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="fontFamily">@font/fjallaone_reg</item>
+    </style>
+    <style name="content_info">
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/notosans_regular</item>
+    </style>
+    <style name="content_desc">
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/notosans_regular</item>
+    </style>
+
+</resources>
