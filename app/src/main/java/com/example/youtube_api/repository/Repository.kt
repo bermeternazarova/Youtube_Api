@@ -6,8 +6,7 @@ import com.example.youtube_api.BuildConfig
 import com.example.youtube_api.core.network.RetrofitClient
 import com.example.youtube_api.core.network.result.Resource
 import com.example.youtube_api.data.remote.ApiService
-import com.example.youtube_api.data.remote.model.Items
-import com.example.youtube_api.data.remote.model.PlaylistDetail
+import com.example.youtube_api.data.remote.model.ItemPLaylist
 import com.example.youtube_api.data.remote.model.Playlists
 import retrofit2.Call
 import retrofit2.Callback
@@ -40,20 +39,20 @@ class Repository {
             })
         return data
     }
-    fun getItemOfPlaylist(playlistId:String): LiveData<Resource<PlaylistDetail>> {
-        val item = MutableLiveData<Resource<PlaylistDetail>>()
+    fun getItemOfPlaylist(playlistId:String): LiveData<Resource<ItemPLaylist>> {
+        val item = MutableLiveData<Resource<ItemPLaylist>>()
 
         apiService.getItemOfPlaylist(
             BuildConfig.API_KEY,
             playlistId = playlistId,
             "snippet,contentDetails",
             40
-        ).enqueue(object : Callback<PlaylistDetail> {
-            override fun onResponse(call: Call<PlaylistDetail>, response: Response<PlaylistDetail>) {
+        ).enqueue(object : Callback<ItemPLaylist> {
+            override fun onResponse(call: Call<ItemPLaylist>, response: Response<ItemPLaylist>) {
                 item.value =Resource.success(response.body())
             }
 
-            override fun onFailure(call: Call<PlaylistDetail>, t: Throwable) {
+            override fun onFailure(call: Call<ItemPLaylist>, t: Throwable) {
             item.value=Resource.error(t.message,null,null)
             }
         })

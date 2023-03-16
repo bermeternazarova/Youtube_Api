@@ -8,7 +8,7 @@ data class Playlists (
     val nextPageToken: String,
     val pageInfo: PageInfo
 )
-data class PlaylistDetail(
+data class ItemPLaylist(
     val etag: String?,
     val items: List<Items>?,
     val kind: String?,

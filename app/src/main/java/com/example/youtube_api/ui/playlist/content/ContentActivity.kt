@@ -10,7 +10,7 @@ import com.example.youtube_api.core.InternetConnection
 import com.example.youtube_api.core.network.extensions.showToast
 import com.example.youtube_api.core.network.result.Status
 import com.example.youtube_api.data.remote.model.Items
-import com.example.youtube_api.data.remote.model.PlaylistDetail
+import com.example.youtube_api.data.remote.model.ItemPLaylist
 import com.example.youtube_api.databinding.ActivityContentBinding
 
 class ContentActivity : BaseActivity<ContentViewModel,ActivityContentBinding>() {
@@ -70,7 +70,7 @@ class ContentActivity : BaseActivity<ContentViewModel,ActivityContentBinding>() 
         }
     }
 
-    private fun setUpData(data: PlaylistDetail) {
+    private fun setUpData(data: ItemPLaylist) {
         if (intent!=null){
             title=intent.getStringExtra(KEY_OF_TITLE).toString()
         }

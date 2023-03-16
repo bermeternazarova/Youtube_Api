@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.viewbinding.ViewBinding
-import com.example.youtube_api.data.remote.model.PlaylistDetail
 
 abstract class BaseActivity<VM:BaseViewModel,VB:ViewBinding> : AppCompatActivity() {
 

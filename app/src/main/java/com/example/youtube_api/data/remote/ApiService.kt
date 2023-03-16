@@ -1,7 +1,6 @@
 package com.example.youtube_api.data.remote
 
-import com.example.youtube_api.data.remote.model.Items
-import com.example.youtube_api.data.remote.model.PlaylistDetail
+import com.example.youtube_api.data.remote.model.ItemPLaylist
 import com.example.youtube_api.data.remote.model.Playlists
 import retrofit2.Call
 import retrofit2.http.GET
@@ -22,5 +21,5 @@ interface ApiService {
         @Query("playlistId") playlistId:String,
         @Query("part") part: String,
         @Query("maxResults") maxResults: Int
-    ): Call<PlaylistDetail>
+    ): Call<ItemPLaylist>
 }
