@@ -1,4 +1,4 @@
-package com.example.youtube_api.extensions
+package com.example.youtube_api.core.network.extensions
 
 import android.content.Context
 import android.view.View

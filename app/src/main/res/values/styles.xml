@@ -48,20 +48,32 @@
         <item name="fontFamily">@font/notosans_regular</item>
     </style>
     <style name="content_title">
-        <item name="android:text">@string/app_name</item>
+        <item name="android:text">@string/title_text</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/text_black</item>
         <item name="fontFamily">@font/fjallaone_reg</item>
     </style>
     <style name="content_info">
-        <item name="android:text">@string/app_name</item>
+        <item name="android:text">In this series, we break down the
+            impact of displacement, instability,
+            violence, and trauma in children, and offer exercises to
+            support children in their healing journey. </item>
         <item name="android:textSize">15sp</item>
         <item name="fontFamily">@font/notosans_regular</item>
+        <item name="android:textColor">@color/text_black</item>
     </style>
     <style name="content_desc">
         <item name="android:text">@string/app_name</item>
         <item name="android:textSize">12sp</item>
         <item name="fontFamily">@font/notosans_regular</item>
+    </style>
+
+    <style name="toolbar_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:text">@string/back</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
 </resources>

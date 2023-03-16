@@ -29,4 +29,9 @@
     <dimen name="scale15p">15sp</dimen>
     <dimen name="device30p">30dp</dimen>
     <dimen name="device225p">225dp</dimen>
+    <dimen name="device9p">9dp</dimen>
+    <dimen name="device15p">15dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>

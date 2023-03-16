@@ -1,4 +1,5 @@
-package com.example.youtube_api.model
+package com.example.youtube_api.data.remote.model
+
 
 data class Playlists (
     val etag: String,
@@ -6,6 +7,12 @@ data class Playlists (
     val kind: String,
     val nextPageToken: String,
     val pageInfo: PageInfo
+)
+data class PlaylistDetail(
+    val etag: String?,
+    val items: List<Items>?,
+    val kind: String?,
+    val snippet: Snippet?
 )
 data class Items(
     val contentDetails: ContentDetails,

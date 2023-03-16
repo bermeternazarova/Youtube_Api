@@ -1,6 +1,7 @@
-package com.example.youtube_api.remote
+package com.example.youtube_api.core.network
 
 import com.example.youtube_api.BuildConfig
+import com.example.youtube_api.data.remote.ApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

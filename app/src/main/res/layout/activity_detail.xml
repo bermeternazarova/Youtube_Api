@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.playlist.detail.DetailActivity">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_video"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/device328p"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/device24p"
+        android:fontFamily="@font/fjallaone_reg"
+        android:text="@string/title_text"
+        android:textColor="@color/text_black"
+        android:textSize="20sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_download"
+        android:layout_width="142dp"
+        android:layout_height="@dimen/device40p"
+        android:layout_marginStart="@dimen/device16p"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/device8p">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="@dimen/device16p"
+            android:fontFamily="@font/notosans_regular"
+            android:text="@string/download"
+            android:textColor="@color/red"
+            android:textSize="@dimen/scale16p" />
+
+        <ImageView
+            android:layout_width="@dimen/device24p"
+            android:layout_height="@dimen/device24p"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="@dimen/device8p"
+            android:background="@drawable/circle"
+            android:src="@drawable/download_24" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_info_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/device16p"
+        android:layout_marginTop="@dimen/device16p"
+        android:fontFamily="@font/notosans_regular"
+        android:text="@string/detail_text"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/scale16p" />
+</LinearLayout>
